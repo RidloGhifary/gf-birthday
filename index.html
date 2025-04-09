@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/debut-light.png" type="image/x-icon" />
+    <title>Ridoo & Lizaa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "body-bg": "url('/doodle.png')",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @keyframes fly-up {
+        0% {
+          transform: translateY(50%);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-1000%);
+          opacity: 0;
+        }
+      }
+
+      .balloon {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
+        animation: fly-up 7s ease-in forwards;
+        font-size: 2rem;
+      }
+
+      #welcome-screen {
+        transition: opacity 0.5s ease;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main
+      class="min-h-screen bg-[#f7e6ea] text-gray-800 px-4 py-10 flex flex-col items-center font-sans"
+      style="
+        background-image: url('/doogle.png');
+        background-repeat: repeat;
+        background-size: contain;
+        background-blend-mode: screen;
+      ">
+      <div
+        id="welcome-screen"
+        class="flex flex-col items-center justify-center z-50 text-center space-y-6 h-dvh transition duration-500">
+        <h1 class="text-3xl font-bold text-[#db8a9d]">
+          Allowww Sayangggkuu mwahhhhh!!!!
+        </h1>
+        <button
+          id="start-btn"
+          class="bg-[#db8a9d] hover:opacity-80 text-white text-sm font-semibold px-5 py-2 rounded-full shadow-lg transition duration-300">
+          Start the Surprise
+        </button>
+      </div>
+
+      <audio id="bg-music" loop>
+        <source
+          src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3"
+          type="audio/mpeg" />
+      </audio>
+
+      <div
+        id="surprice-screen"
+        class="w-full max-w-xl space-y-5 hidden opacity-0 transition duration-300">
+        <div class="min-h-dvh flex justify-center items-center">
+          <!-- 🎈 Balloons -->
+          <span class="balloon text-6xl" style="left: 8%">🎈</span>
+          <span
+            class="balloon text-6xl"
+            style="left: 17%; animation-delay: 0.5s"
+            >🎈</span
+          >
+          <span class="balloon text-6xl" style="left: 35%">🎈</span>
+          <span class="balloon text-6xl" style="left: 26%">🎈</span>
+          <span class="balloon text-6xl" style="left: 86%">🎈</span>
+          <span
+            class="balloon text-6xl"
+            style="left: 77%; animation-delay: 0.5s"
+            >🎈</span
+          >
+          <span class="balloon text-6xl" style="left: 48%">🎈</span>
+          <span class="balloon text-6xl" style="left: 57%">🎈</span>
+          <span class="balloon text-6xl" style="left: 54%">🎈</span>
+          <span
+            class="balloon text-6xl"
+            style="left: 64%; animation-delay: 0.5s"
+            >🎈</span
+          >
+          <span class="balloon text-6xl" style="left: 49%">🎈</span>
+          <span class="balloon text-6xl" style="left: 38%">🎈</span>
+          <span class="balloon text-6xl" style="left: 35%">🎈</span>
+          <span
+            class="balloon text-6xl"
+            style="left: 10%; animation-delay: 0.5s"
+            >🎈</span
+          >
+          <span class="balloon text-6xl" style="left: 74%">🎈</span>
+          <span class="balloon text-6xl" style="left: 2%; animation-delay: 0.5s"
+            >🎈</span
+          >
+
+          <h1
+            class="text-2xl font-bold text-center text-[#db8a9d]"
+            data-aos="fade-up">
+            Happyyyy Birthdayyyy, Sayangggkuuuu Cantikkkuuu Pacarrrkuuu
+            Mwaahhhh!
+          </h1>
+        </div>
+
+        <section class="text-[14px] leading-relaxed text-left">
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                💌 A Message from Me
+              </h2>
+              <p className="text-sm">
+                Almost one year together and still going strong — even from a
+                distance. Can you believe it? I still can’t. We’re kinda
+                awesome.
+              </p>
+              <p className="text-sm">
+                Our accidental first meeting? 10 minutes of magic. Like a teaser
+                trailer for the full movie of us.
+              </p>
+              <p className="text-sm">
+                That moment is stuck in my head like the chorus of a love song…
+                or like Wi-Fi that only works when you’re standing in a weird
+                corner of the house. Totally random, but unforgettable.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                🌟 What You Mean to Me
+              </h2>
+              <p className="text-sm">
+                You’ve brought joy into my life in ways I never expected. Your
+                patience, your understanding, and your silly little jokes always
+                make my day better.
+              </p>
+              <p className="text-sm">
+                I know we can’t be together physically today, but I’m sending
+                all the love through this tiny screen. It’s not much, but hey —
+                technology’s doing its best.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                🧠 Random Thought Dump
+              </h2>
+              <p className="text-sm">
+                I once tried to write you a poem... but it turned into a grocery
+                list because my brain just kept going: "sweet, spicy, soft, and
+                sometimes crunchy" — just like you when you're hangry.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                ✨ Our Journey So Far
+              </h2>
+              <p className="text-sm">
+                From texts and calls to silly memes and heartfelt messages,
+                every moment with you feels like a pixel in our digital love
+                story. It might not always be easy, but it's always worth it.
+              </p>
+              <p className="text-sm">
+                I never thought I’d fall in love through a screen — but here we
+                are, making it work and laughing through the loading screens.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                🎮 A Silly Thought
+              </h2>
+              <p className="text-sm">
+                If love was a game, you’d be the final boss — and I’d still
+                lose, because I’d be too busy admiring you instead of winning
+                ehehe mwahhh
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                🎁 Something's Coming...
+              </h2>
+              <p class="text-base font-normal">
+                And yes... something special is on the way. A little surprise
+                that I hope will make you smile even more. So be patient — good
+                things take time (especially when I'm the one planning them
+                wkwkw).
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="flex justify-center items-start">
+            <div class="space-y-2 h-dvh">
+              <h2 class="font-bold text-2xl text-[#db8a9d]">
+                ⏳ Wait for It...
+              </h2>
+              <p className="text-sm">
+                There’s a little gift coming your way soon — maybe not wrapped
+                in glitter, but definitely wrapped in love. Keep an eye out,
+                okay? 😉
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="flex justify-center items-start pb-[100px]">
+          <section class="space-y-2">
+            <div
+              class="bg-[#f5dce2] border border[#faf2f4] rounded-lg p-3 text-sm text-[#a33650]">
+              <p>
+                I may be far, but I’m close in every word I send you, every joke
+                we share, and every hug I owe you. You’re my sunshine in all
+                this Wi-Fi signal. With all my love, mwahhh mwahhh
+              </p>
+            </div>
+            <footer class="pt-3 text-center text-sm text-gray-400">
+              <p class="text-[#db8a9d] font-medium italic">
+                Your long-distance love mwahhhhh 🎈
+              </p>
+            </footer>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+    <script>
+      document.getElementById("start-btn").addEventListener("click", () => {
+        const music = document.getElementById("bg-music");
+        music.play();
+        document.getElementById("welcome-screen").classList.add("opacity-0");
+        document.getElementById("surprice-screen").classList.remove("hidden");
+        document
+          .getElementById("surprice-screen")
+          .classList.remove("opacity-0");
+        document.getElementById("surprice-screen").classList.add("opacity-100");
+        setTimeout(() => {
+          document.getElementById("welcome-screen").style.display = "none";
+        }, 500); // Match fade duration
+      });
+    </script>
+  </body>
+</html>
